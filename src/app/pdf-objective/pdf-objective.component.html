@@ -1,0 +1,44 @@
+<div class="container">
+  <!-- Button to trigger PDF download -->
+  <button class="btn btn-primary mb-3" (click)="downloadAsPDF()">Download as PDF</button>
+
+  <!-- Table with ID for jsPDF -->
+  <table id="dataTable" class="table table-bordered text-start border border-primary mt-5">
+    <tbody>
+      <tr>
+        <td rowspan="2"><strong>Name</strong></td>
+        <td><strong>Company Code</strong><br>{{data?.name?.companyCode}}</td>
+        <td><strong>Survey Number</strong><br>{{data?.name?.surveyNumber}}</td>
+      </tr>
+      <tr>
+        <td><strong>Title</strong><br>{{data?.name?.title}}</td>
+        <td><strong>Farmer Name</strong><br>{{data?.name?.farmerName}}</td>
+      </tr>
+      <tr>
+        <td rowspan="2"><strong>Tax</strong></td>
+        <td><strong>PAN Number</strong><br>{{data?.tax?.panNumber}}</td>
+        <td><strong>PAN Registration Date</strong><br>{{data?.tax?.panRegistrationDate}}</td>
+      </tr>
+      <tr>
+        <td><strong>Aadhar Number</strong><br>{{data?.tax?.aadharNumber}}</td>
+        <td><strong>PAN Attachment</strong><br><a href="PAN.pdf" target="_blank">{{data?.tax?.panAttachment}}</a></td>
+        <td><strong>Aadhar Attachment</strong><br><a href="AadharCard.pdf" target="_blank">{{data?.tax?.aadharAttachment}}</a></td>
+      </tr>
+      <tr>
+        <td rowspan="3"><strong>Address</strong></td>
+        <td><strong>Door Number</strong><br>{{data?.address?.doorNumber}}</td>
+        <td><strong>Street Line 1</strong><br>{{data?.address?.streetLine1}}</td>
+        <td><strong>Street Line 2</strong><br>{{data?.address?.streetLine2}}</td>
+      </tr>
+      <tr>
+        <td><strong>Street Line 3</strong><br>{{data?.address?.streetLine3}}</td>
+        <td><strong>City / Town</strong><br>{{data?.address?.city}}</td>
+        <td><strong>Country</strong><br>{{data?.address?.country}}</td>
+      </tr>
+      <tr>
+        <td><strong>State / Region</strong><br>{{data?.address?.state}}</td>
+        <td><strong>Zip / Postal Code</strong><br>{{data?.address?.postalCode}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

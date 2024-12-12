@@ -1,0 +1,25 @@
+{
+    "name": {
+      "companyCode": "50012",
+      "surveyNumber": "128/4B",
+      "title": "Mr.",
+      "farmerName": "Rajesh Kumar"
+    },
+    "tax": {
+      "panNumber": "AAAAB1234B",
+      "panRegistrationDate": "15/03/2010",
+      "panAttachment": "PAN.pdf",
+      "aadharNumber": "1234 5678 9012",
+      "aadharAttachment": "Aadhar.pdf"
+    },
+    "address": {
+      "doorNumber": "15",
+      "streetLine1": "Sudarshan Park",
+      "streetLine2": "Village Road",
+      "streetLine3": "Link Rd",
+      "city": "Ludhiana",
+      "state": "Punjab",
+      "country": "India",
+      "postalCode": "141001"
+    }
+  }
